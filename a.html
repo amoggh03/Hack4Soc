@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha384-GLhlTQ8iKuO+ibTAA5ZOlK8QgAgBy6zpo0i6BdNb6VIx4FfFfD9avxhiu0I0FkwS" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.awesome-markers.css" />
+</head>
+<body>
+
+<div id="map_1261803579d7b96e4c922ebf9b15129e" style="width: 600px; height: 400px;"></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha384-MCw98TQff5CVbR+3z6m9Z81eR3MQtL2E48E1/POj4aFByFfxxBg1Dm9t37cJEMGe" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.awesome-markers.js"></script>
+
+<script>
+  // Create a purple icon
+  var purpleIcon = L.AwesomeMarkers.icon({
+      icon: 'fire',
+      markerColor: 'purple'
+  });
+
+  // Initialize the map
+  var map_1261803579d7b96e4c922ebf9b15129e = L.map('map_1261803579d7b96e4c922ebf9b15129e').setView([12.971598, 77.594562], 12);
+
+  // Add a tile layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+  }).addTo(map_1261803579d7b96e4c922ebf9b15129e);
+
+  // Add purple markers using the purple icon
+  var marker_dd0b8ff445305987cae98397c7670136 = L.marker(
+      [12.859067000178, 77.5632669998641],
+      {
+          icon: purpleIcon
+      }
+  ).addTo(map_1261803579d7b96e4c922ebf9b15129e);
+
+  var marker_8db5d9c7fc1d12ac5ba6fc6ac5b72fec = L.marker(
+      [12.922951999756, 77.5619950001617],
+      {
+          icon: purpleIcon
+      }
+  ).addTo(map_1261803579d7b96e4c922ebf9b15129e);
+</script>
+
+</body>
+</html>

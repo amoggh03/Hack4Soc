@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8da256bb8517912de7f9397f41e17440 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+            
+  <script>
+    var marker = L.marker([marker_latitude, marker_longitude]).addTo(map);
+    var popup = L.popup().setContent("Your Popup Content");
+    marker.bindPopup(popup);
+    </script>
+      
+</head>
+<body>
+    <script>
+        var map = L.map("your_map_id", {
+            center: [your_latitude, your_longitude],
+            zoom: your_initial_zoom_level,
+            // Additional options
+        });
+    </script>
+    
+    
+    
+            <div class="folium-map" id="map_8da256bb8517912de7f9397f41e17440" ></div>
+        
+</body>
+<script>
+    var tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors",
+        // Additional options
+    });
+    tileLayer.addTo(map);
+</script>
+
+<script>
+    
+    
+            var map_8da256bb8517912de7f9397f41e17440 = L.map(
+                "map_8da256bb8517912de7f9397f41e17440",
+                {
+                    center: [12.859067000178, 77.5632669998641],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae2862f6e99e430761c8b722eb8ad0e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ae2862f6e99e430761c8b722eb8ad0e2.addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var marker_b7c86efcabe64ea734a0bdf0b77a4cde = L.marker(
+                [12.859067000178, 77.5632669998641],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_9a03e9600a9a03b29c830419bdd90328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b7c86efcabe64ea734a0bdf0b77a4cde.setIcon(icon_9a03e9600a9a03b29c830419bdd90328);
+        
+    
+        var popup_d6a7a09c1ea41b3fde9b22f11a8f1856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696a09e618b8397898545919c51084e7 = $(`<div id="html_696a09e618b8397898545919c51084e7" style="width: 100.0%; height: 100.0%;">Anjanapura Fire Station<br>Coordinates: 12.859067000178, 77.5632669998641</div>`)[0];
+                popup_d6a7a09c1ea41b3fde9b22f11a8f1856.setContent(html_696a09e618b8397898545919c51084e7);
+            
+        
+
+        marker_b7c86efcabe64ea734a0bdf0b77a4cde.bindPopup(popup_d6a7a09c1ea41b3fde9b22f11a8f1856)
+        ;
+
+        
+    
+    
+            var marker_1d3ccc9d2a478bb7310502c7ccd21df6 = L.marker(
+                [12.922951999756, 77.5619950001617],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_1005ac0ecf64e4b70d4dfc53131e5cbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1d3ccc9d2a478bb7310502c7ccd21df6.setIcon(icon_1005ac0ecf64e4b70d4dfc53131e5cbe);
+        
+    
+        var popup_46457f2088214b7dbace64c8c2aa0a2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdba5ff6347ec4d665c90de0f89882ab = $(`<div id="html_bdba5ff6347ec4d665c90de0f89882ab" style="width: 100.0%; height: 100.0%;">Banashanakari Fire Station<br>Coordinates: 12.922951999756, 77.5619950001617</div>`)[0];
+                popup_46457f2088214b7dbace64c8c2aa0a2c.setContent(html_bdba5ff6347ec4d665c90de0f89882ab);
+            
+        
+
+        marker_1d3ccc9d2a478bb7310502c7ccd21df6.bindPopup(popup_46457f2088214b7dbace64c8c2aa0a2c)
+        ;
+
+        
+    
+    
+            var marker_8fa2be2a03c18d1a5f0e9be7ba0cd497 = L.marker(
+                [12.8355330002137, 77.6626951598893],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_29434a3ae1bde6859055fe1098434173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8fa2be2a03c18d1a5f0e9be7ba0cd497.setIcon(icon_29434a3ae1bde6859055fe1098434173);
+        
+    
+        var popup_73ef11fb2c64fac07dd6d07adace6a1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5017917ec0edc86ef752f254f691173 = $(`<div id="html_a5017917ec0edc86ef752f254f691173" style="width: 100.0%; height: 100.0%;">Electronics City Fire Station<br>Coordinates: 12.8355330002137, 77.6626951598893</div>`)[0];
+                popup_73ef11fb2c64fac07dd6d07adace6a1d.setContent(html_a5017917ec0edc86ef752f254f691173);
+            
+        
+
+        marker_8fa2be2a03c18d1a5f0e9be7ba0cd497.bindPopup(popup_73ef11fb2c64fac07dd6d07adace6a1d)
+        ;
+
+        
+    
+    
+            var marker_28286bb8fa88d43fea6fd2cf9096fdf2 = L.marker(
+                [12.7249859997302, 77.6927930004421],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_963d67712f013c3a9ca47f6b41ba639a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_28286bb8fa88d43fea6fd2cf9096fdf2.setIcon(icon_963d67712f013c3a9ca47f6b41ba639a);
+        
+    
+        var popup_8b2c60aecf4e707811ced0d03868e755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ec00465d77f952a69000a80e4817f37 = $(`<div id="html_8ec00465d77f952a69000a80e4817f37" style="width: 100.0%; height: 100.0%;">Anekal Fire Station<br>Coordinates: 12.7249859997302, 77.6927930004421</div>`)[0];
+                popup_8b2c60aecf4e707811ced0d03868e755.setContent(html_8ec00465d77f952a69000a80e4817f37);
+            
+        
+
+        marker_28286bb8fa88d43fea6fd2cf9096fdf2.bindPopup(popup_8b2c60aecf4e707811ced0d03868e755)
+        ;
+
+        
+    
+    
+            var marker_a494d31f6e0da3dd84b334580380df3a = L.marker(
+                [13.1251330004255, 77.6009479997117],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_8297b3d114ac3a50ee837a6de572c601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a494d31f6e0da3dd84b334580380df3a.setIcon(icon_8297b3d114ac3a50ee837a6de572c601);
+        
+    
+        var popup_764eb6d902b0291c5710b4c2a15f98fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bc53390d014493303a7750da9344a77 = $(`<div id="html_3bc53390d014493303a7750da9344a77" style="width: 100.0%; height: 100.0%;">Yelahanka Fire Station<br>Coordinates: 13.1251330004255, 77.6009479997117</div>`)[0];
+                popup_764eb6d902b0291c5710b4c2a15f98fc.setContent(html_3bc53390d014493303a7750da9344a77);
+            
+        
+
+        marker_a494d31f6e0da3dd84b334580380df3a.bindPopup(popup_764eb6d902b0291c5710b4c2a15f98fc)
+        ;
+
+        
+    
+    
+            var marker_ffd0a938e5483542c6dd2c00969b1eac = L.marker(
+                [12.8722635013209, 77.5987909601949],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_72b6ef428cf6ad6777ceb96a7abf042b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ffd0a938e5483542c6dd2c00969b1eac.setIcon(icon_72b6ef428cf6ad6777ceb96a7abf042b);
+        
+    
+        var popup_8f4ce5d497f9c474708cd6090535d18a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e0d138b587b60d0006b13c30e94c4b1 = $(`<div id="html_9e0d138b587b60d0006b13c30e94c4b1" style="width: 100.0%; height: 100.0%;">Hulimavu Fire Station<br>Coordinates: 12.8722635013209, 77.5987909601949</div>`)[0];
+                popup_8f4ce5d497f9c474708cd6090535d18a.setContent(html_9e0d138b587b60d0006b13c30e94c4b1);
+            
+        
+
+        marker_ffd0a938e5483542c6dd2c00969b1eac.bindPopup(popup_8f4ce5d497f9c474708cd6090535d18a)
+        ;
+
+        
+    
+    
+            var marker_012dad387f4a661daf35a0cf3611646a = L.marker(
+                [13.028053000353, 77.5206689999362],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_60455d34cff4b055fffeeaeb314048ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_012dad387f4a661daf35a0cf3611646a.setIcon(icon_60455d34cff4b055fffeeaeb314048ab);
+        
+    
+        var popup_3840919a42fec5009480c9955990b1cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_671a8b3192f135eebed2356183048c18 = $(`<div id="html_671a8b3192f135eebed2356183048c18" style="width: 100.0%; height: 100.0%;">Peenya Fire Station<br>Coordinates: 13.028053000353, 77.5206689999362</div>`)[0];
+                popup_3840919a42fec5009480c9955990b1cb.setContent(html_671a8b3192f135eebed2356183048c18);
+            
+        
+
+        marker_012dad387f4a661daf35a0cf3611646a.bindPopup(popup_3840919a42fec5009480c9955990b1cb)
+        ;
+
+        
+    
+    
+            var marker_ce7b7114a81cf7b543170a97e93e3682 = L.marker(
+                [12.9804729998742, 77.5486169997517],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_60812fdda02d45d186e1f3bbbf9f60b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ce7b7114a81cf7b543170a97e93e3682.setIcon(icon_60812fdda02d45d186e1f3bbbf9f60b6);
+        
+    
+        var popup_60495ef0c82643f77ca58ca9a1e27a58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0c5928aa70d6b8d4d86b832f60c83e4 = $(`<div id="html_a0c5928aa70d6b8d4d86b832f60c83e4" style="width: 100.0%; height: 100.0%;">Rajajinagara Fire Station<br>Coordinates: 12.9804729998742, 77.5486169997517</div>`)[0];
+                popup_60495ef0c82643f77ca58ca9a1e27a58.setContent(html_a0c5928aa70d6b8d4d86b832f60c83e4);
+            
+        
+
+        marker_ce7b7114a81cf7b543170a97e93e3682.bindPopup(popup_60495ef0c82643f77ca58ca9a1e27a58)
+        ;
+
+        
+    
+    
+            var marker_3f69dbc529879c193cb9196e770bcaf9 = L.marker(
+                [12.9168625998515, 77.6737449000677],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_eaa7745e3e5a464f1e6cc1a851ef9954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3f69dbc529879c193cb9196e770bcaf9.setIcon(icon_eaa7745e3e5a464f1e6cc1a851ef9954);
+        
+    
+        var popup_fe7b0a648143dabba9f3384e5f25eedb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dad8446a445ebc2af09572fb8f0f04f = $(`<div id="html_5dad8446a445ebc2af09572fb8f0f04f" style="width: 100.0%; height: 100.0%;">Sarjapur Fire Station<br>Coordinates: 12.9168625998515, 77.6737449000677</div>`)[0];
+                popup_fe7b0a648143dabba9f3384e5f25eedb.setContent(html_5dad8446a445ebc2af09572fb8f0f04f);
+            
+        
+
+        marker_3f69dbc529879c193cb9196e770bcaf9.bindPopup(popup_fe7b0a648143dabba9f3384e5f25eedb)
+        ;
+
+        
+    
+    
+            var marker_466e84858d24d86ceb238b9e3dabede5 = L.marker(
+                [12.9742115158572, 77.4216507378574],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_0f4b3e3dafb6ae4e3d38fe59af875616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_466e84858d24d86ceb238b9e3dabede5.setIcon(icon_0f4b3e3dafb6ae4e3d38fe59af875616);
+        
+    
+        var popup_3d57723eb725b2c256a597ac8d954a11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dabd26aec7d7becc27bfb323099c433b = $(`<div id="html_dabd26aec7d7becc27bfb323099c433b" style="width: 100.0%; height: 100.0%;">Sunkadakatte Fire Station<br>Coordinates: 12.9742115158572, 77.4216507378574</div>`)[0];
+                popup_3d57723eb725b2c256a597ac8d954a11.setContent(html_dabd26aec7d7becc27bfb323099c433b);
+            
+        
+
+        marker_466e84858d24d86ceb238b9e3dabede5.bindPopup(popup_3d57723eb725b2c256a597ac8d954a11)
+        ;
+
+        
+    
+    
+            var marker_3d909db34a4e74485933b8c883f2eb4d = L.marker(
+                [12.9724090004274, 77.6108600004574],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_911eafb9ae330b34264e01c6ac7f00cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3d909db34a4e74485933b8c883f2eb4d.setIcon(icon_911eafb9ae330b34264e01c6ac7f00cc);
+        
+    
+        var popup_c28aa7ad8602a8744af7c1f35311ecfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c3e3fc45a5a72b9078a0c1294c89ec4 = $(`<div id="html_9c3e3fc45a5a72b9078a0c1294c89ec4" style="width: 100.0%; height: 100.0%;">Bengaluru South Fire Station<br>Coordinates: 12.9724090004274, 77.6108600004574</div>`)[0];
+                popup_c28aa7ad8602a8744af7c1f35311ecfa.setContent(html_9c3e3fc45a5a72b9078a0c1294c89ec4);
+            
+        
+
+        marker_3d909db34a4e74485933b8c883f2eb4d.bindPopup(popup_c28aa7ad8602a8744af7c1f35311ecfa)
+        ;
+
+        
+    
+    
+            var marker_17b9c58c50bc2ff5b8f81bd35fe13e17 = L.marker(
+                [12.9985899999803, 77.7026689999322],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_a0351b61a74a5024bc9f38578ef50e03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_17b9c58c50bc2ff5b8f81bd35fe13e17.setIcon(icon_a0351b61a74a5024bc9f38578ef50e03);
+        
+    
+        var popup_1a3564221cbd2d95ce1d3eb9f029b6f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83b65f514dd30591d2c704f93aa376db = $(`<div id="html_83b65f514dd30591d2c704f93aa376db" style="width: 100.0%; height: 100.0%;">Mahadevapura Fire Station<br>Coordinates: 12.9985899999803, 77.7026689999322</div>`)[0];
+                popup_1a3564221cbd2d95ce1d3eb9f029b6f3.setContent(html_83b65f514dd30591d2c704f93aa376db);
+            
+        
+
+        marker_17b9c58c50bc2ff5b8f81bd35fe13e17.bindPopup(popup_1a3564221cbd2d95ce1d3eb9f029b6f3)
+        ;
+
+        
+    
+    
+            var marker_05ad4b63e75140f85e987f3a3b5e866e = L.marker(
+                [12.9777659002955, 77.5890869999081],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_89a452e7167e6c28c528fb8cb5baf540 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_05ad4b63e75140f85e987f3a3b5e866e.setIcon(icon_89a452e7167e6c28c528fb8cb5baf540);
+        
+    
+        var popup_6b89f24b3d368cda1f276122516ef38c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f542b3ca57e98a938a5e66484748b3 = $(`<div id="html_59f542b3ca57e98a938a5e66484748b3" style="width: 100.0%; height: 100.0%;">Bengaluru Secretariat Fire Station<br>Coordinates: 12.9777659002955, 77.5890869999081</div>`)[0];
+                popup_6b89f24b3d368cda1f276122516ef38c.setContent(html_59f542b3ca57e98a938a5e66484748b3);
+            
+        
+
+        marker_05ad4b63e75140f85e987f3a3b5e866e.bindPopup(popup_6b89f24b3d368cda1f276122516ef38c)
+        ;
+
+        
+    
+    
+            var marker_5947f2b882a50725952303ebd0ee4139 = L.marker(
+                [12.9873559880069, 77.7326397279664],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_19be9c79f31960baddf2cd4e9bd4c03e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5947f2b882a50725952303ebd0ee4139.setIcon(icon_19be9c79f31960baddf2cd4e9bd4c03e);
+        
+    
+        var popup_ce746f61494053d6b2c5030740b4ab7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f20719364ff7f609c1595e564f7d6a = $(`<div id="html_37f20719364ff7f609c1595e564f7d6a" style="width: 100.0%; height: 100.0%;">Whitefield Fire Station<br>Coordinates: 12.9873559880069, 77.7326397279664</div>`)[0];
+                popup_ce746f61494053d6b2c5030740b4ab7c.setContent(html_37f20719364ff7f609c1595e564f7d6a);
+            
+        
+
+        marker_5947f2b882a50725952303ebd0ee4139.bindPopup(popup_ce746f61494053d6b2c5030740b4ab7c)
+        ;
+
+        
+    
+    
+            var marker_5d945f1235a27718dd615c3caf0e5ff8 = L.marker(
+                [12.9355274831777, 77.509924953498],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_506dd0a6288e62f34fa870492c0461ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5d945f1235a27718dd615c3caf0e5ff8.setIcon(icon_506dd0a6288e62f34fa870492c0461ab);
+        
+    
+        var popup_ca133811c1af27bc1ac316972a89d9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_204e4f04d364b871ea6c739766ddf0a4 = $(`<div id="html_204e4f04d364b871ea6c739766ddf0a4" style="width: 100.0%; height: 100.0%;">Nagarabhavi Fire Station<br>Coordinates: 12.9355274831777, 77.509924953498</div>`)[0];
+                popup_ca133811c1af27bc1ac316972a89d9d9.setContent(html_204e4f04d364b871ea6c739766ddf0a4);
+            
+        
+
+        marker_5d945f1235a27718dd615c3caf0e5ff8.bindPopup(popup_ca133811c1af27bc1ac316972a89d9d9)
+        ;
+
+        
+    
+    
+            var marker_73e13d412b1422ca2e8de6ab45c1c1ef = L.marker(
+                [12.9625257211168, 77.5630824003806],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_880f4be7645a066ad5e31a8a8fc5fac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_73e13d412b1422ca2e8de6ab45c1c1ef.setIcon(icon_880f4be7645a066ad5e31a8a8fc5fac8);
+        
+    
+        var popup_c46769e7ad1632001570b71f9fd29eae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddde7cd46d7639da8721b076ed381d5e = $(`<div id="html_ddde7cd46d7639da8721b076ed381d5e" style="width: 100.0%; height: 100.0%;">Bengaluru North Fire Station<br>Coordinates: 12.9625257211168, 77.5630824003806</div>`)[0];
+                popup_c46769e7ad1632001570b71f9fd29eae.setContent(html_ddde7cd46d7639da8721b076ed381d5e);
+            
+        
+
+        marker_73e13d412b1422ca2e8de6ab45c1c1ef.bindPopup(popup_c46769e7ad1632001570b71f9fd29eae)
+        ;
+
+        
+    
+    
+            var marker_7c60e2c99792a19d933103b3f024e5fc = L.marker(
+                [12.9351812793424, 77.6008544597293],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_3c61adfab7d6d9c32fd7188d17902ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7c60e2c99792a19d933103b3f024e5fc.setIcon(icon_3c61adfab7d6d9c32fd7188d17902ab4);
+        
+    
+        var popup_ef865508c00bfa800b535bc72d0129a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d892d65b103bae1d6f64f6e446d618c = $(`<div id="html_9d892d65b103bae1d6f64f6e446d618c" style="width: 100.0%; height: 100.0%;">Jayanagara Fire Station<br>Coordinates: 12.9351812793424, 77.6008544597293</div>`)[0];
+                popup_ef865508c00bfa800b535bc72d0129a2.setContent(html_9d892d65b103bae1d6f64f6e446d618c);
+            
+        
+
+        marker_7c60e2c99792a19d933103b3f024e5fc.bindPopup(popup_ef865508c00bfa800b535bc72d0129a2)
+        ;
+
+        
+    
+    
+            var marker_fd5ccfd517fe1b15cb4ecd3de669d00f = L.marker(
+                [13.0225579969286, 77.5497576662169],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_8d49661381193974a4cf4f237b48383e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fd5ccfd517fe1b15cb4ecd3de669d00f.setIcon(icon_8d49661381193974a4cf4f237b48383e);
+        
+    
+        var popup_6c6fd094991b51d80b2e20962428561e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d99275a693ba802de6286ab0ffec973d = $(`<div id="html_d99275a693ba802de6286ab0ffec973d" style="width: 100.0%; height: 100.0%;">Yeshawanthapura Fire Station<br>Coordinates: 13.0225579969286, 77.5497576662169</div>`)[0];
+                popup_6c6fd094991b51d80b2e20962428561e.setContent(html_d99275a693ba802de6286ab0ffec973d);
+            
+        
+
+        marker_fd5ccfd517fe1b15cb4ecd3de669d00f.bindPopup(popup_6c6fd094991b51d80b2e20962428561e)
+        ;
+
+        
+    
+    
+            var marker_b8f9722df0ad2432730ee44e61dde149 = L.marker(
+                [13.0484551882918, 77.6181394945348],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_3fbe11f613cb6488405d112cda88fe34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b8f9722df0ad2432730ee44e61dde149.setIcon(icon_3fbe11f613cb6488405d112cda88fe34);
+        
+    
+        var popup_7cc212c03e0d16f19d4001cb823766f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dc414582cdedae65674a5a48a8420fa = $(`<div id="html_5dc414582cdedae65674a5a48a8420fa" style="width: 100.0%; height: 100.0%;">Hebbal Fire Station<br>Coordinates: 13.0484551882918, 77.6181394945348</div>`)[0];
+                popup_7cc212c03e0d16f19d4001cb823766f9.setContent(html_5dc414582cdedae65674a5a48a8420fa);
+            
+        
+
+        marker_b8f9722df0ad2432730ee44e61dde149.bindPopup(popup_7cc212c03e0d16f19d4001cb823766f9)
+        ;
+
+        
+    
+    
+            var marker_0badbfefff95f83172d225eaf6c60660 = L.marker(
+                [12.9807227206849, 77.5803038729397],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_223c3116cb0a13ab4396d4be9eb53890 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0badbfefff95f83172d225eaf6c60660.setIcon(icon_223c3116cb0a13ab4396d4be9eb53890);
+        
+    
+        var popup_373c78a9edb2f1020cba82497e486e2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c5a3cd237a6b1c993e2161e0b563d2d = $(`<div id="html_5c5a3cd237a6b1c993e2161e0b563d2d" style="width: 100.0%; height: 100.0%;">Bengaluru High Grounds Fire Station<br>Coordinates: 12.9807227206849, 77.5803038729397</div>`)[0];
+                popup_373c78a9edb2f1020cba82497e486e2b.setContent(html_5c5a3cd237a6b1c993e2161e0b563d2d);
+            
+        
+
+        marker_0badbfefff95f83172d225eaf6c60660.bindPopup(popup_373c78a9edb2f1020cba82497e486e2b)
+        ;
+
+        
+    
+    
+            var marker_d9a22e2f2d11731fa0ed8c2888431815 = L.marker(
+                [13.0115642689608, 77.6459202769109],
+                {}
+            ).addTo(map_8da256bb8517912de7f9397f41e17440);
+        
+    
+            var icon_4cbc012f007388a53e786bcaa565333d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d9a22e2f2d11731fa0ed8c2888431815.setIcon(icon_4cbc012f007388a53e786bcaa565333d);
+        
+    
+        var popup_badcdee0a1127c179d8a199b50492c17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a68a77c76d0c2690a50e55c69ff6122 = $(`<div id="html_0a68a77c76d0c2690a50e55c69ff6122" style="width: 100.0%; height: 100.0%;">Banasawadi Fire Station<br>Coordinates: 13.0115642689608, 77.6459202769109</div>`)[0];
+                popup_badcdee0a1127c179d8a199b50492c17.setContent(html_0a68a77c76d0c2690a50e55c69ff6122);
+            
+        
+
+        marker_d9a22e2f2d11731fa0ed8c2888431815.bindPopup(popup_badcdee0a1127c179d8a199b50492c17)
+        ;
+
+        
+    
+</script>
+</html>
